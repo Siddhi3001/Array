@@ -1,15 +1,14 @@
 package Basics;
 
-public class SumOfElement {
-
+public class SumOfFirst3Element {
 	public static void main(String[] args) {
 		int[]arr= {10,20,30,40,50};
 		int sum=0;
-		for(int i=0;i<arr.length;i++)
+		for(int i=0;i<3;i++)
 		{
 			sum+=arr[i];
 		}
-		System.out.println("The Sum is : "+sum);
+		System.out.println("The Sum of firest 3 element is : "+sum);
 	}
 
 }
