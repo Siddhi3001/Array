@@ -1,0 +1,27 @@
+# Eclipse / Java project metadata
+.metadata/
+.settings/
+
+# Build output and compiled artifacts
+bin/
+build/
+out/
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE and editor files
+.idea/
+*.iml
+.vscode/
+
+# Temporary and OS files
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+.DS_Store
+Thumbs.db
