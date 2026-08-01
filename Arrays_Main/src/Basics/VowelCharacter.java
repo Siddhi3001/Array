@@ -1,7 +1,5 @@
 package Basics;
 
-import java.util.Arrays;
-
 public class VowelCharacter {
 	public static void main(String[] args ) {
 	
