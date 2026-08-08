@@ -1,0 +1,60 @@
+package MissingElement;
+
+public class PalindromeMissingElement {
+
+	    public static void main(String[] args) {
+
+	        int[] a = {5, 6, 11, 8, 7, 20};
+
+	        printMissingPalindrome(a);
+	    }
+
+	    public static void printMissingPalindrome(int[] a) {
+
+	        int max = max(a);
+
+	        boolean[] isPresent = new boolean[max + 1];
+
+	        for (int i = 0; i < a.length; i++) {
+	            isPresent[a[i]] = true;
+	        }
+
+	        System.out.println("Missing Palindrome Numbers:");
+
+	        for (int i = 0; i <= max; i++) {
+
+	            if (!isPresent[i] && isPalindrome(i)) {
+	                System.out.print(i + " ");
+	            }
+	        }
+	    }
+
+	    public static boolean isPalindrome(int num) {
+
+	        int temp = num;
+	        int rev = 0;
+
+	        while (temp > 0) {
+	            int rem = temp % 10;
+	            rev = rev * 10 + rem;
+	            temp /= 10;
+	        }
+
+	        return rev == num;
+	    }
+
+	    public static int max(int[] a) {
+
+	        int max = Integer.MIN_VALUE;
+
+	        for (int i = 0; i < a.length; i++) {
+
+	            if (a[i] > max) {
+	                max = a[i];
+	            }
+	        }
+
+	        return max;
+	    }
+}
+

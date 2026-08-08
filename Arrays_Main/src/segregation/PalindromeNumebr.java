@@ -19,11 +19,11 @@ public class PalindromeNumebr {
 
 	        while (i < j) {
 
-	            while (i < j && isLetter(ch[i])) {
+	            while (i < j ) {
 	                i++;
 	            }
 
-	            while (i < j && !isLetter(ch[j])) {
+	            while (i < j ) {
 	                j--;
 	            }
 
